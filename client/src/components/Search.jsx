@@ -20,7 +20,7 @@ const Search = () => {
                     list.push(key)
                 }
                 setChampions(list)
-                // console.log(list)
+                console.log(list)
             })
             .catch(err => console.error(err))
     })

@@ -27,6 +27,8 @@ const Dashboard = () => {
             .catch(err => console.log(err))
     }, [id])
 
+    // let text = `${champion}`
+    // text = text.replace("\\s", "")
 
     return (
         <div>
@@ -37,7 +39,7 @@ const Dashboard = () => {
                         <div className="text-center text-white text-content-bold">
                             <h2>{champion.name}</h2>
                             <p>{champion.title}</p>
-                            <img src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.name}_0.jpg`} alt="Not Working" className="container rounded mx-auto d-block" />
+                            <img src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg`} alt="Not Working" className="container rounded mx-auto d-block" />
                         </div>
                         <Link to={`/new/${champion.name}`} className='btn btn-primary my-3'>Create a new guide</Link>
                     </div> :
